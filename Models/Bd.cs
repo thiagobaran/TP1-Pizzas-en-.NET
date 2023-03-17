@@ -9,9 +9,7 @@ namespace Pizzas.API.Utils {
     public static class BD {
         private static string CONNECTION_STRING = @"Persist Security Info=False;User ID=Pizzas;password=Pizzas;Initial Catalog=DAI-Pizzas;Data Source=.;";
         public static List<Pizza> GetAll() {
-            //
-            // Obtiene todos los registro de la base de datos
-            //
+            
             string          sqlQuery;
             List<Pizza>     returnList;
 
@@ -25,9 +23,7 @@ namespace Pizzas.API.Utils {
             return returnList;
         }
         public static Pizza GetById(int id) {
-            //
-            // Obtiene un registro de la base de datos segun el Id
-            //
+            
             string  sqlQuery;
             Pizza   returnEntity = null;
             
@@ -40,9 +36,7 @@ namespace Pizzas.API.Utils {
             return returnEntity;
         }
         public static int Insert(Pizza pizza) {
-            // 
-            // Inserta un registro y retorna los RowsAffected.
-            //
+            
             string  sqlQuery;
             int     intRowsAffected = 0;
                 
@@ -64,9 +58,7 @@ namespace Pizzas.API.Utils {
         }
 
         public static int UpdateById(Pizza pizza) {
-            // 
-            // Actualiza un registro y retorna los RowsAffected.
-            //
+            
             string  sqlQuery;
             int     intRowsAffected = 0;
 
@@ -89,9 +81,7 @@ namespace Pizzas.API.Utils {
             return intRowsAffected;
         }
         public static int DeleteById(int id) {
-            //
-            // Elimina un registro y retorna los RowsAffected.
-            //
+            
             string  sqlQuery;
             int     intRowsAffected = 0;
             
